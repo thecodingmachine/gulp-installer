@@ -1,4 +1,20 @@
 {
+  "name": "mouf/gulp-installer",
+  "description": "An installer package that installs Gulp as a Composer dependency.",
+  "keywords": ["installer", "gulp", "gulpjs", "nodejs"],
+  "homepage": "http://mouf-php.com/packages/mouf/gulp-installer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Négrier",
+      "email": "d.negrier@thecodingmachine.com",
+      "homepage": "http://mouf-php.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/thecodingmachine/gulp-installer/issues",
+    "source": "https://github.com/thecodingmachine/gulp-installer"
+  }
   "require": {
     "koala-framework/composer-extra-assets": "~1.1"
   },
