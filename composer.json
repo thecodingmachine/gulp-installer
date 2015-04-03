@@ -14,7 +14,7 @@
   "support": {
     "issues": "https://github.com/thecodingmachine/gulp-installer/issues",
     "source": "https://github.com/thecodingmachine/gulp-installer"
-  }
+  },
   "require": {
     "koala-framework/composer-extra-assets": "~1.1"
   },
