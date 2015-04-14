@@ -44,19 +44,20 @@ Sample
     },
     "extra": {
         "require-npm": {
-            "gulp-load-plugins": "~0.8.0",
-            "main-bower-files": "~2.5.0",
-            "gulp-filter": "~2.0.1",
             "gulp-concat": "~2.4.3",
             "gulp-uglify": "~1.1.0",
             "gulp-sourcemaps": "~1.3.0",
             "gulp-livereload": "~3.7.0",
-            "gulp-order": "~1.1.1",
             "gulp-minify-css": "~0.4.5",
-            "gulp-less": "~3.0.0",
-            "run-sequence": "~1.0.2"
+            "gulp-less": "~3.0.0"
         }
     }
 }
 ```
 
+Hey! But that package does not contain anything expect a composer.json file!
+----------------------------------------------------------------------------
+
+Yup. Historically, this package used to contain a Composer plugin, but since most of the code used to generate
+the link to `gulp` has been put in [Koala framework's composer extra assets](https://github.com/koala-framework/composer-extra-assets/),
+this package is reduced to a mere `composer.json`.

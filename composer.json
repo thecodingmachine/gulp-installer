@@ -21,7 +21,13 @@
   "extra": {
     "require-npm": {
       "gulp": "*"
+    },
+    "expose-npm-binaries": true
+    "mouf": {
+      "nodejs": {
+        "version": ">=0.10"
+      }
     }
   },
-  "bin": [ "bin/gulp" ]
+  "minimum-stability": "dev"
 }
