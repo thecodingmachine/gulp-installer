@@ -22,7 +22,7 @@
     "require-npm": {
       "gulp": "*"
     },
-    "expose-npm-binaries": true
+    "expose-npm-binaries": true,
     "mouf": {
       "nodejs": {
         "version": ">=0.10"
