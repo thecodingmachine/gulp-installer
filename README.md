@@ -27,7 +27,7 @@ Simply include this package in your `composer.json` requirements:
 }
 ```
 
-Then, you can run Gulp using the `vendor/bin/gulp` script (`vendor/bin/gulp.bat` on Windows).
+Then, you can run Gulp using the `vendor/bin/gulp` script (`vendor\bin\gulp.bat` on Windows).
 
 Most of the time, you will want to install a number of plugins with Gulp. Thanks to 
 [Koala framework's composer extra assets](https://github.com/koala-framework/composer-extra-assets/), you can add
@@ -55,9 +55,31 @@ Sample
 }
 ```
 
+A little Composer trick
+-----------------------
+
+Lazy about typing "vendor\bin" to run Gulp?
+
+You can also run gulp as a Composer command. For this, you can simply declare a `gulp` in the `scripts` section:
+
+**composer.json**
+```json
+{
+    "require": {
+        "mouf/gulp-installer": "~1.0"
+    },
+    "scripts": {
+        "gulp": "gulp"
+    }
+}
+```
+
+Now, you can run gulp using the `composer gulp` command :)
+
 Hey! But that package does not contain anything expect a composer.json file!
 ----------------------------------------------------------------------------
 
 Yup. Historically, this package used to contain a Composer plugin, but since most of the code used to generate
 the link to `gulp` has been put in [Koala framework's composer extra assets](https://github.com/koala-framework/composer-extra-assets/),
 this package is reduced to a mere `composer.json`.
+
